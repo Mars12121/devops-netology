@@ -99,13 +99,13 @@
 
 ![alt text](https://github.com/Mars12121/devops-netology/blob/main/img/9.png)
 
-1. Добавьте файл `.gitignore` в следующий коммит (`git add...`).
-1. На одном из следующих блоков вы будете изучать `Terraform`, давайте сразу создадим соотвествующий каталог `terraform` и внутри этого каталога — файл `.gitignore` по примеру: https://github.com/github/gitignore/blob/master/Terraform.gitignore.  
+2. Добавьте файл `.gitignore` в следующий коммит (`git add...`).
+3. На одном из следующих блоков вы будете изучать `Terraform`, давайте сразу создадим соотвествующий каталог `terraform` и внутри этого каталога — файл `.gitignore` по примеру: https://github.com/github/gitignore/blob/master/Terraform.gitignore.  
 
 ![alt text](https://github.com/Mars12121/devops-netology/blob/main/img/10.png)
 
-1. В файле `README.md` опишите своими словами, какие файлы будут проигнорированы в будущем благодаря добавленному `.gitignore`.
-1. Закоммитьте все новые и изменённые файлы. Комментарий к коммиту должен быть `Added gitignore`.
+4. В файле `README.md` опишите своими словами, какие файлы будут проигнорированы в будущем благодаря добавленному `.gitignore`.
+5. Закоммитьте все новые и изменённые файлы. Комментарий к коммиту должен быть `Added gitignore`.
 
 ### Эксперимент с удалением и перемещением файлов (третий и четвёртый коммит)
 
@@ -113,13 +113,13 @@
 
 ![alt text](https://github.com/Mars12121/devops-netology/blob/main/img/11.png)
 
-1. В случае необходимости обратитесь к [официальной документации](https://git-scm.com/book/ru/v2/Основы-Git-Запись-изменений-в-репозиторий) — здесь подробно описано, как выполнить следующие шаги. 
-1. Удалите файл `will_be_deleted.txt` с диска и из репозитория. 
+2. В случае необходимости обратитесь к [официальной документации](https://git-scm.com/book/ru/v2/Основы-Git-Запись-изменений-в-репозиторий) — здесь подробно описано, как выполнить следующие шаги. 
+3. Удалите файл `will_be_deleted.txt` с диска и из репозитория. 
 
 ![alt text](https://github.com/Mars12121/devops-netology/blob/main/img/12.png)
 
-1. Переименуйте (переместите) файл `will_be_moved.txt` на диске и в репозитории, чтобы он стал называться `has_been_moved.txt`.
-1. Закоммитьте результат работы с комментарием `Moved and deleted`.
+4. Переименуйте (переместите) файл `will_be_moved.txt` на диске и в репозитории, чтобы он стал называться `has_been_moved.txt`.
+5. Закоммитьте результат работы с комментарием `Moved and deleted`.
 
 ![alt text](https://github.com/Mars12121/devops-netology/blob/main/img/13.png)
 
