@@ -4,7 +4,7 @@
 1. Все файлы с расширением ".tfvars", ".tfvars.json"
 3. Файл с именем ".terraform.tfstate.lock.info", ".terraformrc", "terraform.rc"
 
-
+Tag v0.1
 
 ### Цель задания
 
