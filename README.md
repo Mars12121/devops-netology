@@ -153,22 +153,22 @@ origin-https	https://github.com/andrey-borue/devops-netology.git (push)
 
 Ответ Задание 3:
 1. Переходим в ветку Main 
-[alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/10.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/10.png)
 
 2. Просматриваем лог коммита с наименованием "Prepare to delete and move" и копируем Hash
-[alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/11.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/11.png)
 
 3. Возвращаемся к Commit "Prepare to delete and move" по Hash
-[alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/12.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/12.png)
 
 4. После создания ветки Fix и пуша ее в удаленную репу. Проверяем схему представления веток
-[alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/13.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/13.png)
 
 5. После обновления файла README.MD проверяем схему
-[alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/14.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/14.png)
 
 6. Проверяем как теперь выглядит история Commit
-[alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/15.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/15.png)
 
 ## Задание 4. Упрощаем себе жизнь
 
@@ -184,11 +184,11 @@ origin-https	https://github.com/andrey-borue/devops-netology.git (push)
 
 Ответ Задание 3:
 1. Используя редактор PyCharm изменяем файл README.MD и пушим в удаленный репозирий
-[alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/16.png)
-[alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/17.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/16.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/17.png)
 
 2. Проверяем историю Commit при помоще IDE редактора в удаленном репозитории в ветке "Fit" 
-[alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/18.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/Основы_Git/img/18.png)
 
 
 
