@@ -6,5 +6,3 @@
 
 
 Branch FIX
-
-IDE PyCharm
