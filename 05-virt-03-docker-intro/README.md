@@ -51,6 +51,8 @@ https://hub.docker.com/repository/docker/mars1211/custom-nginx/general
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
+Ответ:
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/5.png)
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
@@ -68,6 +70,30 @@ https://hub.docker.com/repository/docker/mars1211/custom-nginx/general
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
+Ответ:
+
+В режиме ввода/вывода/ошибок контейнера при нажатии Ctrl-C происходит завершение процесса запуска контейнера. Что и привело к остановке контейнера.
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/6.png)
+
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/7.png)
+
+Мы изменили конфигурацию Nginx. В новой конфигурации Nginx слушает порт 81, вместо 80 ранее, и перенаправляет запрос на HTML страницу. Соответственно после перезапуска Nginx, внутри контейнера при обращении на порт 80 мы получаем ошибку, а при обращении на порт 81 видим HTML. 
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/8.png)
+
+При обращении на хост по порту 8080 который перенаправлял на порт 80 контейнера. Мы получаем ошибку. Так как Nginx контейнера больше не слушает порт 80.
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/9.png)
+
+Меняем конфиг контейнера, что бы восстановить работоспособность сайта
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/10.png)
+
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/11.png)
+
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/12.png)
+
+Удаляем контейнер
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/13.png)
+
+
 ## Задача 4
 
 
@@ -77,8 +103,13 @@ https://hub.docker.com/repository/docker/mars1211/custom-nginx/general
 - Добавьте ещё один файл в текущий каталог ```$(pwd)``` на хостовой машине.
 - Подключитесь во второй контейнер и отобразите листинг и содержание файлов в ```/data``` контейнера.
 
-
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
+
+Ответ:
+
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/14.png)
+
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/15.png)
 
 
 ## Задача 5
@@ -127,6 +158,37 @@ services:
 7. Удалите любой из манифестов компоуза(например compose.yaml).  Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
+
+
+Ответ:
+
+При наличие разных файлов docker compose, первым по умолчанию запускается файл compose.yaml
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/16.png)
+
+Редактируем файл compose.yaml, что бы при запуске docker compose запуск происходил из всех файлов
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/17.png)
+
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/18.png)
+
+Производим первоначальную настройку portainer
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/21.png)
+
+Деплоим новый компоуд для образа custom-nginx
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/22.png)
+
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/23.png)
+
+inspect контейнера nginx
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/24.png)
+
+Выполнение команды "docker compose up -d" с отсутствующим файлом compose.yaml. Вывел предупреждение то что запущенный контейнер portainer отсутствует в манифесте docker-compose.yaml. 
+Используя атрибут --remove-orphans к команде "docker compose up -d". Удаляет несоответсвующие контейнеры манифесту.
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/25.png)
+
+При удалении проекта docker compose у нас продолжает работать контейнер nginx, т.к. этот контейнер не относится к проету
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/26.png)
+
+
 
 ---
 
