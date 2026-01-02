@@ -30,7 +30,7 @@ See 'snap info docker' for additional versions.
 
 
 ### Ответ:
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/1.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/1.png)
 
 ---
 
@@ -53,7 +53,7 @@ See 'snap info docker' for additional versions.
 ### Ответ:
 Собирем образ из [Dockerfile.python](https://github.com/Mars12121/shvirtd-example-python/blob/main/Dockerfile.python) 
 
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/2.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/2.png)
 
 
 ## Задача 2 (*)
@@ -82,11 +82,11 @@ See 'snap info docker' for additional versions.
 ### Ответ:
 Запускаем проект Docker compose по сценарию [compose.yaml](https://github.com/Mars12121/shvirtd-example-python/blob/main/compose.yaml) 
 
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/3.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/3.png)
 
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/4.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/4.png)
 
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/5.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/5.png)
 
 ## Задача 4
 1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
@@ -98,7 +98,7 @@ See 'snap info docker' for additional versions.
 
 ### Ответ:
 Разворачиваем ВМ task4
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/6.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/6.png)
 
 Подкотовим bash-скрипт
 ```
@@ -107,13 +107,13 @@ cd /opt/shvirtd-example-python
 docker compose up -d
 ```
 Запускаем bash-скрипт и проверяем запущенные контейнеры
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/7.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/7.png)
 
 Запускаем проверку сервера 
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/8.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/8.png)
 
 Проверям таблицу в БД
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/9.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/9.png)
 
 Форк репозиторий https://github.com/Mars12121/shvirtd-example-python/tree/main
 
@@ -129,10 +129,10 @@ docker compose up -d
 
 ### Ответ:
 Склонируем образ ```hashicorp/terraform:latest``` и скопируйем бинарный файл ```/bin/terraform``` на свою локальную машину, используя docker save.
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/10.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/10.png)
 
 Скопируйем бинарный файл ```/bin/terraform``` на свою локальную машину, используя dive.
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/11.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/11.png)
 
 ## Задача 6.1
 Добейтесь аналогичного результата, используя docker cp.  
@@ -140,7 +140,7 @@ docker compose up -d
 
 ### Ответ:
 Скопируйем бинарный файл ```/bin/terraform``` на свою локальную машину, используя docker cp.
-![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-03-docker-intro/img/12.png)
+![alt text](https://github.com/Mars12121/devops-netology/blob/main/05-virt-04-docker-in-practice/img/12.png)
 
 ## Задача 6.2 (**)
 Предложите способ извлечь файл из контейнера, используя только команду docker build и любой Dockerfile.  
